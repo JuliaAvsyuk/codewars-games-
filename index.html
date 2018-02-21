@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work</title>
+</head>
+<body>
+<script>
+    let res1 = 1, res2 = 1, all;
+    function factorialDivision(n, d) {
+        for(let i=0;;) {
+            if (i < n) {
+                i++;
+                res1 *= i;
+            } else {
+                for (let j = 0; ;) {
+                    if (j < d) {
+                        j++;
+                        res2 *= j;
+                    } else {
+                        return res1/res2;
+                    }
+                }
+            }
+        }
+    }
+    factorialDivision(5,2);
+    console.log(res1/res2);
+</script>
+</body>
+</html>
