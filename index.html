@@ -6,14 +6,14 @@
 </head>
 <body>
 <script>
-    let res1 = 1, res2 = 1;
+    let res1 = res2 = 1;
     function factorialDivision(n, d) {
         for(let i=0;;) {
             if (i < n) {
                 i++;
                 res1 *= i;
             } else {
-                for (let j = 0; ;) {
+                for (let j = 0;;) {
                     if (j < d) {
                         j++;
                         res2 *= j;
